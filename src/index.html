@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portal Dashboard</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <script
+      src="https://kit.fontawesome.com/292bf2031d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-gray-100 h-screen flex">
+    <!-- Left Sidebar -->
+    <div
+      class="w-1/6 h-[128vh] p-[10px] sidebar rounded-[32px] m-[20px] bg-[#925FE2] text-white"
+    >
+      <!-- logo div  -->
+      <div class="w-100 flex items-center justify-center pt-3 h-32">
+        <img src="/public/Frame 47.png" height="50" width="100" alt="" />
+      </div>
+
+      <!-- icons div -->
+      <div class="w-100 flex mt-14 pb-5 flex-col justify-between h-[93vh] pl-7">
+        <div class="flex flex-col gap-10">
+          <div class="flex gap-5 items-center">
+            <a><i class="fa-brands fa-windows" style="color: #ffffff"> </i></a>
+            <a href="/dashboard" class="cursor-pointer font-semibold"
+              >Dashboard</a
+            >
+          </div>
+
+          <div class="flex gap-4 items-center">
+            <a><i class="fa fa-credit-card" style="color: #ffffff"> </i></a>
+            <a
+              href="/dashboard"
+              class="cursor-pointer font-semibold text-gray-200 hover:text-white transition-all"
+              >Payment Info</a
+            >
+          </div>
+
+          <div class="flex gap-3 items-center">
+            <a
+              ><i class="fa fa-user-plus mr-[2px]" style="color: #ffffff"> </i
+            ></a>
+            <a
+              href="/dashboard"
+              class="cursor-pointer font-semibold text-gray-200 hover:text-white transition-all"
+              >Registeration</a
+            >
+          </div>
+
+          <div class="flex gap-4 items-center">
+            <a
+              ><i class="fa fa-book-open mr-[1px]" style="color: #ffffff"> </i
+            ></a>
+            <a
+              href="/dashboard"
+              class="cursor-pointer font-semibold text-gray-200 hover:text-white transition-all"
+              >Courses</a
+            >
+          </div>
+
+          <div class="flex gap-5 items-center">
+            <a
+              ><i class="fa fa-file-excel mr-[3px]" style="color: #ffffff"> </i
+            ></a>
+            <a
+              href="/dashboard"
+              class="cursor-pointer font-semibold text-gray-200 hover:text-white transition-all"
+              >Drop Semisters</a
+            >
+          </div>
+
+          <div class="flex gap-5 items-center">
+            <a
+              ><i
+                class="fa fa-square-poll-vertical mr-[1px]"
+                style="color: #ffffff"
+              >
+              </i
+            ></a>
+            <a
+              href="/dashboard"
+              class="cursor-pointer font-semibold text-gray-200 hover:text-white transition-all"
+              >Results</a
+            >
+          </div>
+
+          <div class="flex gap-4 items-center">
+            <a
+              ><i class="fa fa-message mr-[3px]" style="color: #ffffff"> </i
+            ></a>
+            <a
+              href="/dashboard"
+              class="cursor-pointer font-semibold text-gray-200 hover:text-white transition-all"
+              >Notice</a
+            >
+          </div>
+        </div>
+
+        <!-- logout div -->
+        <div class="flex gap-4 items-center">
+          <a
+            ><i
+              class="fa fa-right-from-bracket mr-[3px]"
+              style="color: #ffffff"
+            >
+            </i
+          ></a>
+          <a
+            class="cursor-pointer font-semibold text-gray-200 hover:text-white transition-all"
+            >Logout</a
+          >
+        </div>
+      </div>
+
+    </div>
+
+          <!-- small menu -->
+          <div class="small">
+            <nav role="navigation">
+              <div id="menuToggle">
+
+                <input type="checkbox" />
+                
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu">
+                  <div class="w-100 flex items-center justify-center pt-2 h-32">
+                    <img src="/public/Frame 47.png" height="50" width="100" alt="" />
+                  </div>
+            
+                  <!-- icons div -->
+                  <div class="w-100 flex mt-14 pb-5 flex-col justify-between h-[93vh] pl-7">
+                    <div class="flex flex-col gap-10">
+                      <div class="flex gap-5 items-center">
+                        <a><i class="fa-brands fa-windows" style="color: #ffffff"> </i></a>
+                        <a href="/dashboard" class="cursor-pointer font-semibold"
+                          >Dashboard</a
+                        >
+                      </div>
+            
+                      <div class="flex gap-4 items-center">
+                        <a><i class="fa fa-credit-card" style="color: #ffffff"> </i></a>
+                        <a
+                          href="/dashboard"
+                          class="cursor-pointer font-semibold text-gray-200 hover:text-white transition-all"
+                          >Payment Info</a
+                        >
+                      </div>
+            
+                      <div class="flex gap-3 items-center">
+                        <a
+                          ><i class="fa fa-user-plus mr-[2px]" style="color: #ffffff"> </i
+                        ></a>
+                        <a
+                          href="/dashboard"
+                          class="cursor-pointer font-semibold text-gray-200 hover:text-white transition-all"
+                          >Registeration</a
+                        >
+                      </div>
+            
+                      <div class="flex gap-4 items-center">
+                        <a
+                          ><i class="fa fa-book-open mr-[1px]" style="color: #ffffff"> </i
+                        ></a>
+                        <a
+                          href="/dashboard"
+                          class="cursor-pointer font-semibold text-gray-200 hover:text-white transition-all"
+                          >Courses</a
+                        >
+                      </div>
+            
+                      <div class="flex gap-5 items-center">
+                        <a
+                          ><i class="fa fa-file-excel mr-[3px]" style="color: #ffffff"> </i
+                        ></a>
+                        <a
+                          href="/dashboard"
+                          class="cursor-pointer font-semibold text-gray-200 hover:text-white transition-all"
+                          >Drop Semisters</a
+                        >
+                      </div>
+            
+                      <div class="flex gap-5 items-center">
+                        <a
+                          ><i
+                            class="fa fa-square-poll-vertical mr-[1px]"
+                            style="color: #ffffff"
+                          >
+                          </i
+                        ></a>
+                        <a
+                          href="/dashboard"
+                          class="cursor-pointer font-semibold text-gray-200 hover:text-white transition-all"
+                          >Results</a
+                        >
+                      </div>
+            
+                      <div class="flex gap-4 items-center">
+                        <a
+                          ><i class="fa fa-message mr-[3px]" style="color: #ffffff"> </i
+                        ></a>
+                        <a
+                          href="/dashboard"
+                          class="cursor-pointer font-semibold text-gray-200 hover:text-white transition-all"
+                          >Notice</a
+                        >
+                      </div>
+                    </div>
+            
+                    <!-- logout div -->
+                    <div class="flex gap-4 items-center">
+                      <a
+                        ><i
+                          class="fa fa-right-from-bracket mr-[3px]"
+                          style="color: #ffffff"
+                        >
+                        </i
+                      ></a>
+                      <a
+                        class="cursor-pointer font-semibold text-gray-200 hover:text-white transition-all"
+                        >Logout</a
+                      >
+                    </div>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
+    <!-- =====================================================side bar ends============================================================= -->
+
+    <!-- Main Content -->
+    <div class="w-4/5 p-5 maincontent">
+      <!-- Navbar -->
+      <div class="flex justify-between items-center mb-4 pr-2">
+        <div class="flex items-center">
+          <!-- Search Element -->
+          <form action="">
+            <input
+              type="text"
+              class="border px-8 pr-20 outline-none py-2 rounded-full shadow-lg searchbox"
+              placeholder="Search"
+            />
+          </form>
+        </div>
+
+        <!-- Profile Section -->
+        <div class="flex items-center gap-2">
+          <!-- Profile Pic -->
+          <div class="flex items-center">
+            <div
+              class="rounded-full border-2 border-[#925FE2] overflow-hidden mr-3 shadow-2xl"
+            >
+              <img
+                src="../public/5. College Student.png"
+                alt="Profile"
+                class="w-10 h-10 cursor-pointer"
+              />
+            </div>
+
+            <!-- Profile Info -->
+            <div>
+              <p class="text-sm font-bold">Muneeb shah</p>
+              <p class="text-xs text-gray-600">Student Class 12</p>
+            </div>
+          </div>
+
+          <!-- Bell Icon with Notification Dot -->
+          <div class="relative ml-4">
+            <div class="w-6 h-6 cursor-pointer">
+              <span class="fa fa-bell"></span>
+            </div>
+            <!-- Notification Dot -->
+            <div
+              class="absolute top-0 right-2 h-2 w-2 bg-red-500 rounded-full"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====================================navbar ends ========================================================= -->
+
+      <!-- Banner -->
+      <div class="rounded-md p-5 bg-[#925FE2] relative overflow-hidden banner">
+        <div class="flex items-center mx-5 bannermaindiv">
+          <!-- Left Side Div -->
+          <div class="flex flex-col leftsiddivbanner">
+            <p class="text-gray-200 text-lg mb-6">September 4, 2023</p>
+            <div>
+              <h1 class="text-3xl text-white mb-2 font-bold">
+                Welcome back, Muneeb !
+              </h1>
+              <p class="text-gray-200">
+                Always stay updated on your student portal.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Side Div -->
+          <div class="ml-auto flex absolute right-4 top-[6px] bannerimgmain">
+            <!-- Vector Image -->
+            <img
+              class="imgdegree"
+              src="../public/Scholarcap scroll.png"
+              width="170"
+              height="100"
+              alt="Vector Image"
+            />
+            <img
+              src="../public/5. College Student.png"
+              height="140"
+              alt="Vector Image"
+              class="w-40 h-40 studentvector"
+            />
+            <img
+              class="imgbag"
+              src="../public/Backpack.png"
+              width="140"
+              height="140"
+              alt="Vector Image"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- ====================================================banner ends ==================================== -->
+
+      <!-- Main Div -->
+      <div class="mt-4 p-4 pl-0 pr-0">
+        <div class="flex gap-8 maindiv">
+          <!-- Left Div -->
+          <div class="w-2/3 flex flex-col gap-5 mb-0 leftdiv1">
+            <div class="flex justify-between items-center px-2">
+              <h3 class="text-lg font-bold">Finance</h3>
+            </div>
+
+            <!-- Cards Section -->
+            <div class="flex gap-4 cardsec1">
+              <!-- Card 1 -->
+              <div
+                class="w-64 flex bg-white flex-col items-center text-center rounded-2xl p-6 shadow-xl"
+              >
+                <img
+                  class="mb-4"
+                  src="../public/Frame 30.png"
+                  height="40"
+                  width="70"
+                  alt=""
+                />
+                <h4 class="text-xl font-bold mb-2">$10,000</h4>
+                <p>Total Payable</p>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class="w-64 bg-white flex border-2 border-[#925FE2] flex-col items-center text-center rounded-2xl p-6 shadow-2xl"
+              >
+                <img
+                  class="mb-4"
+                  src="../public/Group 14.png"
+                  height="40"
+                  width="70"
+                  alt=""
+                />
+                <h4 class="text-xl font-bold mb-2">$8,500</h4>
+                <p>Total Paid</p>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class="w-64 bg-white flex flex-col items-center text-center rounded-2xl p-6 shadow-xl"
+              >
+                <img
+                  class="mb-4"
+                  src="../public/Group 15.png"
+                  height="40"
+                  width="70"
+                  alt=""
+                />
+                <h4 class="text-xl font-bold mb-2">$1,500</h4>
+                <p>Remaining Balance</p>
+              </div>
+            </div>
+
+            <!-- Cards Section 2 -->
+            <div class="flex justify-between items-center px-2">
+              <h3 class="text-lg font-bold mt-5">Enrolled Courses</h3>
+              <h4 class="text-[#925FE2] font-bold cursor-pointer">See all</h4>
+            </div>
+
+            <div class="flex gap-4 cardsec2">
+              <!-- Card 1 -->
+              <div
+                class="firstbottomdiv w-67 flex bg-[#915fe250] rounded-2xl p-4 pl-6 pr-6 shadow-xl border-2 border-[#925FE2]"
+              >
+                <!-- left div -->
+                <div>
+                  <h4 class="text-lg text-[#925FE2] font-bold mb-5">
+                    Python Programming
+                  </h4>
+                  <button
+                    class="px-7 py-1 font-bold mb-2 bg-[#925FE2] text-white rounded-full"
+                  >
+                    Veiw
+                  </button>
+                </div>
+
+                <!-- right div 1-->
+                <div>
+                  <img
+                    src="../public/Icon Container.png"
+                    width="120"
+                    height="120"
+                    alt="Computer"
+                  />
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class="firstbottomdiv w-67 flex bg-[#915fe250] rounded-2xl p-4 pl-6 pr-6 shadow-xl"
+              >
+                <!-- left div -->
+                <div>
+                  <h4 class="text-lg text-[#925FE2] font-bold mb-5">
+                    Javascript Programming
+                  </h4>
+                  <button
+                    class="px-7 mb-2 py-1 font-bold bg-[#925FE2] text-white rounded-full"
+                  >
+                    Veiw
+                  </button>
+                </div>
+
+                <!-- right div 2-->
+                <div>
+                  <img
+                    src="../public/Group 16.png"
+                    height="100"
+                    width="100"
+                    alt="Computer"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Div -->
+          <div class="w-1/3 rightdivP">
+            <!-- Top Div -->
+            <div class="flex flex-col gap-5 px-2">
+              <div class="flex justify-between items-center">
+                <h3 class="text-lg font-bold mb-2">Course Instructors</h3>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <!-- Avatar 1 -->
+                <div
+                  class="border-2 border-[#925FE2] overflow-hidden rounded-full"
+                >
+                  <img
+                    class="w-14 h-14"
+                    src="../public/5. College Student.png"
+                    alt=""
+                  />
+                </div>
+                <!-- Avatar 2 -->
+                <div
+                  class="border-2 border-[#925FE2] overflow-hidden rounded-full"
+                >
+                  <img
+                    class="w-14 h-14"
+                    src="../public/5. College Student.png"
+                    alt=""
+                  />
+                </div>
+                <!-- Avatar 3 -->
+                <div
+                  class="border-2 border-[#925FE2] overflow-hidden rounded-full"
+                >
+                  <img
+                    class="w-14 h-14"
+                    src="../public/5. College Student.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="flex items-center justify-between pr-2">
+                <h3 class="text-lg font-bold">Daily Notice</h3>
+                <h4 class="text-[#925FE2] font-bold cursor-pointer">See all</h4>
+              </div>
+            </div>
+
+            <!-- Bottom Div -->
+            <div
+              class="p-8 flex flex-col gap-8 shadow-xl mt-5 rounded-xl bg-white"
+            >
+              <!-- Top Div -->
+              <div>
+                <h4 class="text-md font-bold mb-2">Exam Schedule</h4>
+                <p class="mb-3">
+                  2 lines of Lorem Ipsum random text Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Sapiente, modi.
+                </p>
+                <h4 class="text-gray-500 cursor-pointer font-bold">See More</h4>
+              </div>
+
+              <!-- Bottom Div -->
+              <div>
+                <h4 class="text-md font-bold mb-2">Exam Schedule</h4>
+                <p class="mb-3">
+                  2 lines of Lorem Ipsum random text. Lorem, ipsum dolor sit
+                  amet consectetur adipisicing elit.
+                </p>
+                <h4 class="text-gray-500 cursor-pointer font-bold">See More</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content Goes Here -->
+    </div>
+  </body>
+</html>
