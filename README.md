@@ -2,7 +2,7 @@
 
 Welcome to the Student Portal Dashboard – a responsive and fully-featured dashboard built with HTML5, CSS3, and Tailwind CSS!
 
-![Dashboard Thumbnail](https://github.com/MuneebWaliKhan09/student-portal-dashboard/blob/main/public/Student%20Portal%20Dashboard%20Thumbnail.png?raw=true)
+![Dashboard Thumbnail](https://github.com/MuneebWaliKhan09/student-portal-dashboard/blob/main/public/student-portal.png?raw=true)
 
 ## Features
 
